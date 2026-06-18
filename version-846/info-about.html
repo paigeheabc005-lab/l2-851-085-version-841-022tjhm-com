@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="关于这个纯静态影视站点的页面结构和展示方式。">
+  <meta name="keywords" content="亚洲影视, 电影, 电视剧, 免费在线播放, HLS, 影视大全, 在线播放">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="关于我们 - 亚洲影视大全">
+  <meta property="og:description" content="关于这个纯静态影视站点的页面结构和展示方式。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/catalog.js"></script>
+  <script defer src="assets/hls.min.js"></script>
+  <script defer src="assets/site.js"></script>
+  
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>关于我们 - 亚洲影视大全</title>
+</head>
+<body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>亚洲影视</span></a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link" href="ranking.html">排行榜</a>
+      <div class="dropdown">
+        <button type="button" class="nav-button">分类</button>
+        <div class="dropdown-menu">
+          <a href="category-guochan.html" class="dropdown-link">国产影视</a><a href="category-rihan.html" class="dropdown-link">日韩精选</a><a href="category-oumei.html" class="dropdown-link">欧美大片</a><a href="category-yazhou.html" class="dropdown-link">亚洲热剧</a>
+        </div>
+      </div>
+      <a class="nav-link" href="search.html">搜索</a>
+    </nav>
+    <form class="header-search" data-search-form action="search.html" method="get">
+      <input class="search-input" name="q" type="search" placeholder="搜索影视作品..." aria-label="搜索影视">
+      <button class="search-button" type="submit">搜索</button>
+    </form>
+    <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="展开菜单">☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <div class="stack">
+      <a href="index.html">首页<span class="muted">Home</span></a>
+      <a href="ranking.html">排行榜<span class="muted">Top</span></a>
+      <a href="search.html">搜索<span class="muted">Search</span></a>
+      <a href="category-guochan.html">国产影视<span class="muted">分类</span></a><a href="category-rihan.html">日韩精选<span class="muted">分类</span></a><a href="category-oumei.html">欧美大片<span class="muted">分类</span></a><a href="category-yazhou.html">亚洲热剧<span class="muted">分类</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="page-article">
+      <a class="breadcrumb" href="index.html">← 返回首页</a>
+      <h1>关于我们</h1>
+      <p class="intro">这是一个根据素材内容重新编排的纯静态电影网站，重点在于页面完整性、可访问性与可部署性。</p>
+      <h2>设计目标</h2>
+      <p>通过首页焦点区、分类区、搜索区、排行榜与详情播放页，形成完整的影视内容浏览闭环。</p>
+      <h2>内容组织</h2>
+      <p>影片数据直接转化为静态页面，保留封面、年份、地区、标签、简介与影评，便于搜索引擎抓取。</p>
+      <h2>展示风格</h2>
+      <p>整体采用深色英雄区与浅色卡片区混合的电影感设计，突出封面与标题，同时保持阅读舒适度。</p>
+      <h2>维护方式</h2>
+      <p>后续如果增加新的影片数据，只需扩展数据源并重新生成页面即可，不需要数据库支持。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>亚洲影视大全</h3>
+        <p>精选 150 部影视作品，包含国产、日韩、欧美与亚洲热剧等分类。页面采用纯静态 HTML 结构，支持在线播放、检索与内链浏览。</p>
+      </div>
+      <div>
+        <h3>分类导航</h3>
+        <p><a href="category-guochan.html">国产影视</a></p>
+        <p><a href="category-rihan.html">日韩精选</a></p>
+        <p><a href="category-oumei.html">欧美大片</a></p>
+        <p><a href="category-yazhou.html">亚洲热剧</a></p>
+      </div>
+      <div>
+        <h3>帮助中心</h3>
+        <p><a href="info-guide.html">观影指南</a></p>
+        <p><a href="info-notice.html">使用说明</a></p>
+        <p><a href="info-about.html">关于我们</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span data-year></span> 亚洲影视大全 · 纯静态站点</div>
+  </div>
+</footer>
+
+
+</body>
+</html>

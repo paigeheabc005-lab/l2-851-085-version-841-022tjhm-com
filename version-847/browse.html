@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>静态影库 - 片库</title>
+  <meta name="description" content="按关键词、类型、地区、题材和年份筛选影片的静态片库页面。">
+  <meta name="keywords" content="电影,电视剧,动画,静态影库,影片导航,在线播放导航,SEO">
+  <link rel="stylesheet" href="/assets/styles.css">
+  
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/index.html">
+      <span class="brand-mark">M</span>
+      <span>
+        <strong>静态影库</strong>
+        <small>2000 部影片目录</small>
+      </span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="打开菜单" data-menu-toggle>☰</button>
+    <nav class="nav-links" data-nav-links>
+      <a href="/index.html">首页</a>
+      <a href="/browse.html">片库</a>
+      <a href="/index.html#hot">精选</a>
+      <a href="/browse.html#filters">筛选</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="container">
+  <div class="breadcrumb"><a href="/index.html">首页</a> / 片库</div>
+  <section class="panel" id="filters">
+    <div class="section-head" style="margin-top:0;">
+      <div>
+        <h1 style="margin:0; font-size:32px;">片库筛选</h1>
+        <p>支持关键词、类型、地区、题材、年份和排序组合筛选。</p>
+      </div>
+      <button class="btn btn-secondary" type="button" data-clear-filters>清空筛选</button>
+    </div>
+    <div class="filter-bar">
+      <input type="search" placeholder="输入片名 / 标签 / 梗概" data-filter-search>
+      <select data-filter-type><option value="">全部类型</option></select>
+      <select data-filter-region><option value="">全部地区</option></select>
+      <select data-filter-genre><option value="">全部题材</option></select>
+      <select data-filter-year><option value="">全部年份</option></select>
+      <select data-filter-sort>
+        <option value="new">最新优先</option>
+        <option value="old">最早优先</option>
+        <option value="title">标题排序</option>
+        <option value="region">地区排序</option>
+      </select>
+    </div>
+    <div class="chips" data-quick-tags style="margin-top: 14px;"></div>
+  </section>
+
+  <div class="results-head">
+    <strong data-results-count>正在加载影片...</strong>
+    <span class="muted">每页 24 部</span>
+  </div>
+
+  <section class="grid cards" data-browse-results></section>
+  <div class="pagination" data-pagination></div>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>静态影库</strong>
+      <p>根据上传素材自动生成的纯静态电影网站。</p>
+    </div>
+    <div>
+      <strong>素材统计</strong>
+      <p>2000 条影片数据 · 136 个地区 · 62 种类型</p>
+    </div>
+    <div>
+      <strong>更新时间</strong>
+      <p>2026-05-27 08:10</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+<script src="/assets/data.js" defer></script>
+<script src="/assets/site.js" defer></script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
